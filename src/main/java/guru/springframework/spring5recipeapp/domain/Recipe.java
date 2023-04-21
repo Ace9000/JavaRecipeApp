@@ -1,13 +1,13 @@
 package guru.springframework.spring5recipeapp.domain;
 
-import jakarta.persistence.*;
 import lombok.Data;
+import org.springframework.data.annotation.Id;
 
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
 @Data
-@Entity
 public class Recipe {
 
     @Id

@@ -1,11 +1,11 @@
 package guru.springframework.spring5recipeapp.domain;
 
-import jakarta.persistence.*;
 import lombok.*;
+
+import javax.persistence.*;
 
 @Data
 @EqualsAndHashCode(exclude = {"recipe"})
-@Entity
 public class Notes {
 
     @Id

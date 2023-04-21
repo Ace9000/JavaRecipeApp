@@ -1,13 +1,19 @@
 package guru.springframework.spring5recipeapp.domain;
 
-import jakarta.persistence.*;
-import lombok.*;
 
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import org.springframework.data.annotation.Id;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.ManyToMany;
 import java.util.Set;
+
+
 
 @Data
 @EqualsAndHashCode(exclude = {"recipes"})
-@Entity
 public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
