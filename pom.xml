@@ -77,7 +77,22 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
         </dependency>
-    </dependencies>
+        <dependency>
+            <groupId>com.codingapi.springboot</groupId>
+            <artifactId>springboot-framework</artifactId>
+            <version>1.0.5</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.5</version>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<plugins>
