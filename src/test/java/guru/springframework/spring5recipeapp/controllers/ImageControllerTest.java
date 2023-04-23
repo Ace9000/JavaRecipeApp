@@ -85,4 +85,11 @@ class ImageControllerTest {
         byte[] responseBytes = response.getContentAsByteArray();
         assertEquals(s.getBytes().length, responseBytes.length);
     }
+    @Test
+    public void testGetImageNumberFromException() throws Exception {
+
+        mockMvc.perform(get("/recipe/qa/recipeimage"))
+                .andExpect(status().isBadRequest())
+                .andExpect(view().name("400error"));
+    }
 }
