@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:mysql//localhost:3306/sfg_dev
+    username: root
+    password: admin
+jpa:
+  hibernate:
+    ddl-auto: validate
+    database-platform: org.hibernate.dialect.MySql5InnoDBDialect
+    database: mysql
+    show-sql: true

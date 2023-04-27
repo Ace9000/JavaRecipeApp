@@ -8,7 +8,6 @@ import org.hibernate.validator.constraints.URL;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.util.HashSet;
 import java.util.Set;
@@ -20,7 +19,6 @@ public class RecipeCommand {
 
     private Long id;
 
-    @NotBlank
     @Size(min = 3, max = 255)
     private String description;
 
@@ -39,7 +37,6 @@ public class RecipeCommand {
     @URL
     private String url;
 
-    @NotBlank
     private String directions;
     private Set<IngredientCommand> ingredients = new HashSet<>();
     private Byte[] image;
